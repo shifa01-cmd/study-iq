@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Success Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff;
+            line-height: 1.6;
+        }
+        .container {
+            text-align: center;
+            padding: 30px 15px;
+        }
+        .pre-headline {
+            font-size: 18px;
+            color: #777;
+        }
+        .headline {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            margin: 15px 0;
+        }
+        .subheading {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .comment-bubbles {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .bubble {
+            background: #f8f4f2;
+            color: #444;
+            font-style: italic;
+            padding: 25px 30px;
+            border-radius: 30px;
+            margin: 20px;
+            max-width: 350px;
+            position: relative;
+            opacity: 0;
+            animation: slideIn 1s forwards;
+            font-size: 22px;
+        }
+        .bubble.left {
+            align-self: flex-start;
+            margin-left: 10%;
+        }
+        .bubble.right {
+            align-self: flex-end;
+            margin-right: 10%;
+        }
+        /* Bubble Animation */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .sympathy {
+            font-size: 24px;
+            color: #a5674e;
+            margin-bottom: 15px;
+            font-family: 'Georgia', serif;
+            font-style: italic;
+        }
+        .closing {
+            font-size: 18px;
+            margin: 20px auto;
+            max-width: 600px;
+            line-height: 1.8;
+            color: #555;
+        }
+        .cta {
+            background: #a5674e;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s ease;
+        }
+        .cta:hover {
+            background: #874836;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Pre-Headline -->
+        <div class="pre-headline">For candidates who want to…</div>
+
+        <!-- Headline -->
+        <div class="headline">Turn Fear into Confidence, Secure Your Dream Job with Ease!</div>
+
+        <!-- Subheading -->
+        <div class="subheading">It's time to excel at work and interviews.</div>
+
+        <!-- Pain Points with Larger Bubbles -->
+        <div class="comment-bubbles">
+            <div class="bubble left" style="animation-delay: 0.2s;">“Mujhse nahi hoga shayad.”</div>
+            <div class="bubble right" style="animation-delay: 0.4s;">“Meri kismat hi kharab hai.”</div>
+            <div class="bubble left" style="animation-delay: 0.6s;">“Mujhe lagta hai unhone already kisi aur ko select kar liya tha.”</div>
+            <div class="bubble right" style="animation-delay: 0.8s;">“Ghar walo ko kya jawab dunga?”</div>
+            <div class="bubble left" style="animation-delay: 1s;">“Mujhse acha toh sab kar rahe hain.”</div>
+        </div>
+
+        <!-- Sympathy Section -->
+        <div class="sympathy">Guess What? There’s good news!</div>
+
+        <!-- Closing Section -->
+        <div class="closing">
+            You can stop self-sabotaging with those negative thoughts and self-doubts that are holding you back from success…
+        </div>
+
+        <!-- CTA -->
+        <a href="#" class="cta">Start Your Journey Now</a>
+    </div>
+</body>
+</html>
